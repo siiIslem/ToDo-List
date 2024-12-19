@@ -72,9 +72,10 @@ public class TodoAppSwing {
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 
         int screenHeight = screenSize.height;
+        int screenWidth = screenSize.width;
 
-        // Set custom width (e.g., 800px) and maximum height
-        int frameWidth = 650;  // Your desired width
+        // Set custom width and height
+        int frameWidth = (int) (screenWidth * 0.35);  // Your desired width
         int frameHeight = (int) (screenHeight * 0.9);  // Maximum height
 
         frame.setSize(frameWidth, frameHeight);
