@@ -430,6 +430,7 @@ public class TodoAppSwing {
                 if (confirm == JOptionPane.YES_OPTION) {
                     tasks.removeIf(task -> task.isCompleted());
                     refreshTaskList(); // Refresh the list to reflect the removal
+                    updateProgressLabel();
                 }
             }
         });
